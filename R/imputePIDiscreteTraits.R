@@ -8,7 +8,6 @@
 #' @param missingData data.frame of 1 factor column containing NAs
 #' @param tree phylo
 #' @return a data.frame of 1 factor column with the NAs replaced by values
-#' @export
 imputeOneDiscreteTrait <- function(missingData, tree){
   
   #check if tips in matrix traits are ordered as in the tree
