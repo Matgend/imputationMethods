@@ -11,3 +11,17 @@ library(devtools)
 
 devtools::install_github("Matgend/imputationMethods")
 ```
+```
+#Load missingData
+NaData <- get(load(system.file("extdata", "missingData.RData", package = "imputationMethods")))
+missingData <- NaData$DataNaN$MCAR$`MCAR/AllTraits/13/0.33`
+
+#Load phylogenetic tree
+trueData <- get(load(system.file("extdata", "trueDataAndTree.RData", package = "imputationMethods")))
+tree <- trueData$TreeList$`0`
+plot(tree)
+
+
+#visualize the missing value distribution
+vis_miss(missingData)
+```
