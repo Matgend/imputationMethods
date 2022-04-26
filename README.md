@@ -6,6 +6,7 @@ To install the package from Github using devtools.
 
 ```
 install.packages("devtools")
+install.packages("visdat") 
 library(devtools)
 
 devtools::install_github("Matgend/imputationMethods")
